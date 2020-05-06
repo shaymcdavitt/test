@@ -17,31 +17,31 @@ body,html {
     display: grid;
     height: 100%;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(7, 25%);
     grid-column-gap:0px;
     font-family: 'Nunito', sans-serif;
   }
 
+/*slidedownpage*/
+.bg {
+    grid-column: 1 / 5;
+    grid-row: 1 /7;
+    background-color: #FCDBA7;
+    z-index: -1;
+}
+
 .topbar {
     grid-column: 1 / 5;
     grid-row: 1;
-    height: 50%;
+    height: 60%;
     background-color: rgba(255, 255, 255, 0.801);
-}
-
-.barbg{
-  grid-column: 1 / 5;
-    grid-row: 1;
-    height: 50%;
-    background-color: #FCDBA7;
-    z-index: -1;
 }
 
 /* dropdown */
 /* Dropdown Button */
 .dropbtn {
   background-color: rgba(255, 255, 255, 0.801);
-  height: 50%;
+  height: 60%;
   width: 210px;
   padding: 10px;
   border: none;
@@ -54,6 +54,11 @@ body,html {
   width:210px;
   position: relative;
   display: inline-block;
+}
+
+.home{
+  grid-column: 2;
+  grid-row: 1;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -85,7 +90,7 @@ body,html {
 .icon2 {
     grid-column: 2;
     grid-row: 1;
-    width:20%;
+    width:30%;
     margin-left: 90%;
     margin-top: 3%;
 }
@@ -96,77 +101,23 @@ body,html {
     width: 25%;
 }
 
-.boxed1 {
-    grid-row: 1 / 5;
-    grid-column: 1 / 3;
-    background-color: #FCDBA7;
-    z-index: -2;
-}
-
-.boxed2 {
-    background-color: white;
-    grid-row: 1 / 5;
-    grid-column: 3 / 5;
-    z-index: -2;
-}
-
-.hey {
+.label {
   grid-column: 1 / 3;
-  grid-row: 2 / 3;
-    font-size: 120px;
-    font-weight: 800;
-    color: white;
-    margin-left:auto;
-    margin-right:30px;
-}
-
-.shay {
-  grid-column: 3 / 5;
-  grid-row: 2 / 3;
-    font-size: 120px;
-    font-weight: 800;
-    margin-left:30px;
-    margin-right:auto;
-}
-
-.designer {
-  grid-column: 1 / 5;
-  grid-row: 3 / 5;
-  font-size: 80px;
-    font-weight: 600;
-    margin-left:auto;
-    margin-right:auto;
-}
-.smalldesignerbottom{ 
-  display:none;
-}
-.smalldesigner{ 
-  display:none;
-}
-
-.scroll {
-  grid-column: 2 / 4;
-  grid-row: 4 / 5;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:auto;
-  margin-bottom:auto;
-  width:300px;
-}
-
-.portbg {
-  grid-column: 1 / 5;
-  grid-row: 6 / 13;
-  background-color: rgb(255, 233, 198);
-  z-index: -1;
+  grid-row: 1;
+  color:#3C658E;
+  font-weight: 800;
+  font-size: 30pt;
+  text-align: left;
+  margin-left: 16%;
+  margin-top: 2%;
 }
 
 .box1 {
   grid-column: 1 / 3;
-  grid-row: 6 / 9;
+  grid-row: 2 / 5;
   position: relative;
-  margin-top:120px;
-  width: 35%;
+  width: 50%;
+  height: 57.5%;
   margin-left: 24%;
 }
 
@@ -176,11 +127,11 @@ body,html {
 
 .box2 {
   grid-column: 2 / 4;
-  grid-row: 6 / 9;
+  grid-row: 2 / 5;
   margin-left: 27%;
   position: relative;
-  margin-top:120px;
-  width: 35%;
+  width: 50%;
+  height:58%;
 }
 
 .box2:hover .overlay {
@@ -189,11 +140,11 @@ body,html {
 
 .box3 {
   grid-column: 3 / 5;
-  grid-row: 6 / 9;
+  grid-row: 2 / 5;
   margin-left: 30%;
   position: relative;
-  margin-top:120px;
-  width: 35%;
+  width: 50%;
+  height:58%;
 }
 
 .box3:hover .overlay {
@@ -203,11 +154,11 @@ body,html {
 
 .box4 {
   grid-column: 1 / 3;
-  grid-row: 9 / 12;
+  grid-row: 4 / 7;
   margin-left: 24%;
   position: relative;
-  margin-top:40px;
-  width: 35%;
+  width: 50%;
+  height:58%;
 }
 
 .box4:hover .overlay {
@@ -216,11 +167,11 @@ body,html {
 
 .box5 {
   grid-column: 2 / 4;
-  grid-row: 9 / 12;
+  grid-row: 4 / 7;
   margin-left: 27%;
   position: relative;
-  margin-top:40px;
-  width: 35%;
+  width: 50%;
+  height:58%;
 }
 
 .box5:hover .overlay {
@@ -229,11 +180,11 @@ body,html {
 
 .box6 {
   grid-column: 3 / 5;
-  grid-row: 9 / 12;
+  grid-row: 4 / 7;
   margin-left: 30%;
   position: relative;
-  margin-top:40px;
-  width: 35%;
+  width: 50%;
+  height:58%;
 }
 
 .box6:hover .overlay {
@@ -272,9 +223,10 @@ body,html {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .contact {
   grid-column: 1 / 5;
-  grid-row: 12 / 13;
+  grid-row: 6 / 7;
   margin-top:5%;
 }
 
@@ -314,9 +266,13 @@ ul li {
 .twitter:hover {
   fill: #ffffff;
 }
-}
-@media screen and (max-width: 1099px){
 
+}
+
+
+
+@media screen and (max-width: 1099px){
+  
   *{
     margin: 0;
     padding:0;
@@ -325,173 +281,111 @@ ul li {
   body,html {
   padding: 0;
   margin: 0;
+  height:100%;
   }
-  
+
   .wrapper {
-    height:670px;
-    width:100%;
-      display: grid;
-      grid-template-columns: repeat(4, 25%);
-      grid-template-rows: repeat(4, 25%);
-      grid-gap: 1px;
-      font-family: 'Nunito', sans-serif;
+    height: 670px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(11, 25%);
+    font-family: 'Nunito', sans-serif;
   }
-
-  .topbar {
+  .bg {
     grid-column: 1 / 5;
-    grid-row: 1;
-    height: 40%;
-    background-color: rgba(255, 255, 255, 0.801);
-  }
-
-  .barbg {
-    grid-column: 1 / 5;
-    grid-row: 1;
-    height: 50%;
+    grid-row: 1 / 11;
     background-color: #FCDBA7;
     z-index: -1;
-  }
-
-  .dropbtn {
-    background-color: rgba(255, 255, 255, 0.801);
-    height: 40%;
-    width: 110px;
-    padding: 10px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    grid-column: 1;
-    grid-row: 1;
-    width:110px;
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.801);
-    min-width: 110px;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: #3C658E;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: rgb(255, 255, 255);}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: rgb(255, 255, 255)}
-  
-  
-  .icon2 {
-    grid-column: 2;
-    grid-row: 1;
-    width:50px;
-    margin-left: 90px;
-    margin-top: 10px;
-  }
-  
-  .menu {
-    grid-column: 1;
-    grid-row: 1;
-    width: 20px;
-  }
-
-  .boxed1 {
-    grid-row: 1 / 3;
-    grid-column: 1 / 5;
-    background-color: #FCDBA7;
-    z-index: -2;
 }
 
-.boxed2 {
-  background-color: white;
-  grid-row: 3 / 5;
+.home{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.topbar {
   grid-column: 1 / 5;
-  z-index: -2;
+  grid-row: 1;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.801);
 }
 
-.hey {
-  grid-column: 1 / 5;
-  grid-row: 1 / 3;
-    font-size:60px;
-    font-weight: 800;
-    color: white;
-    margin-top: 110px;
-    margin-left:auto;
-    margin-right:auto;
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0.801);
+  height: 60%;
+  width:100%;
+  padding: 10px;
+  border: none;
 }
 
-.shay {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
-    font-size: 60px;
-    font-weight: 800;
-    margin-top: 30px;
-    margin-left:auto;
-    margin-right:auto;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  display: inline-block;
 }
 
-.designer {
-display:none;
-}
-.smalldesigner{
-  grid-column: 1 / 5;
-  grid-row: 3 / 5;
-  font-size:35px;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-left:auto;
-    margin-right:auto;
-    color: #3C658E;
-}
-.smalldesignerbottom{
-  grid-column: 1 / 5;
-  grid-row: 3 / 5;
-  font-size: 30px;
-    font-weight: 600;
-    margin-top: 90px;
-    margin-left:auto;
-    margin-right:auto;
-    color: #3C658E;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.801);
+  min-width: 160px;
+  z-index: 1;
 }
 
-.scroll {
-  grid-column: 1 / 5;
-  grid-row: 4 / 5;
-  margin-left:auto;
-  margin-right:auto;
-  width:200px;
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #3C658E;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.portbg {
-  grid-column: 1 / 5;
-  grid-row: 5 / 16;
-  background-color: rgb(255, 233, 198);
-  z-index: -1;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(255, 255, 255);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(255, 255, 255)}
+
+.label {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  color:#3C658E;
+  font-weight: 800;
+  font-size: 15pt;
+  text-align: left;
+  margin-left: 28%;
+  margin-top: 35px;
+}
+
+.icon2 {
+  grid-column: 2;
+  grid-row: 1;
+  width:50px;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: 1;
+  width: 20px;
 }
 
 .box1 {
   grid-column: 1 / 5;
-  grid-row: 5 / 7;
+  grid-row: 1 / 3;
   position: relative;
-  margin-top:70px;
+  margin-top:160px;
   width: 170px;
   margin-left: auto;
-  margin-right:auto;
+  margin-right: auto;
 }
 
 .box1:hover .overlay {
@@ -500,7 +394,7 @@ display:none;
 
 .box2 {
   grid-column: 1 / 5;
-  grid-row: 7 / 9;
+  grid-row: 3 / 5;
   position: relative;
   margin-top: 30px;
   width: 170px;
@@ -514,9 +408,9 @@ display:none;
 
 .box3 {
   grid-column: 1 / 5;
-  grid-row: 8 / 10;
+  grid-row: 4 / 6;
   position: relative;
-  margin-top:120px;
+  margin-top:80px;
   width: 170px;
   margin-left: auto;
   margin-right:auto;
@@ -529,9 +423,9 @@ display:none;
 
 .box4 {
   grid-column: 1 / 5;
-  grid-row: 9 / 11;
+  grid-row: 5 / 7;
   position: relative;
-  margin-top:170px;
+  margin-top:120px;
   width: 170px;
   margin-left: auto;
   margin-right:auto;
@@ -543,9 +437,8 @@ display:none;
 
 .box5 {
   grid-column: 1 / 5;
-  grid-row: 13 / 15;
+  grid-row: 7 / 8;
   position: relative;
-  margin-top: 140px;
   width: 170px;
   margin-left: auto;
   margin-right:auto;
@@ -557,10 +450,10 @@ display:none;
 
 .box6 {
   grid-column: 1 / 5;
-  grid-row: 12 / 14;
+  grid-row: 8 / 9;
   position: relative;
   width: 170px;
-  margin-top: 40px;
+  margin-top:50px;
   margin-left: auto;
   margin-right:auto;
 }
@@ -573,7 +466,7 @@ display:none;
   display: block;
   width: 100%;
   height: auto;
-  border-radius:10%;
+  border-radius: 10%;
 }
 
 .overlay {
@@ -604,19 +497,20 @@ display:none;
 
 .contact {
   grid-column: 1 / 5;
-  grid-row: 15 / 16;
-  margin-top:5%;
+  grid-row:9 / 9;
+  margin-top:25%;
 }
+
 
 ul li {
   display:inline;
 }
 
 .insta {
-  width: 30px;
+  width: 20px;
   fill:#3C658E;
-  margin-left: 15%; 
-  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-left:18%; 
 }
 
 .insta:hover {
@@ -624,11 +518,10 @@ ul li {
 }
 
 .linkedin {
-  width: 32px;
+  width: 23px;
   fill:#3C658E;
-  margin-top: 75px;
-  margin-left: 20px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 23px;
 }
 
 .linkedin:hover {
@@ -636,10 +529,9 @@ ul li {
 }
 
 .twitter {
-  width: 32px;
+  width: 23px;
   fill:#3C658E;
-  margin-left: 20px;
-  margin-bottom: 25px;
+  margin-left: 23px;
 }
 .twitter:hover {
   fill: #ffffff;
